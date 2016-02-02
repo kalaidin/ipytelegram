@@ -1,5 +1,6 @@
 # ipytelegram
 IPython magic for Telegram notifications,
+
 or get a push once a model is finally trained.
 
 Requires
@@ -22,21 +23,21 @@ Use
 -------------
 Cell magic as follows:
 
-    %%telegram_send I am finally done!
+    %%telegram_send I am finally trained!
     model.train(epochs=1e10)
 
-will send "I am done" to you on behalf of your bot once the cell is executed.
+will send "I am finally trained!" to you on behalf of your bot once the cell is completed.
 
 Token
 -------------
-Talk to [BotFather](https://telegram.me/botfather) to create a bot.
+Talk to [BotFather](https://telegram.me/botfather) to create a bot and get a token.
 
 ID
 -------------
-Send a message to your bot first, then run:
+The bot is not able to start a conversation with you, so talk to him first, then run:
 
     import telepot
     bot = telepot.Bot(<token>)
     response = bot.getUpdates()
 
-Look up `response` for ID.
+Look up `response` for your ID.
