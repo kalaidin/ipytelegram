@@ -1,5 +1,6 @@
 # ipytelegram
-IPython magic for Telegram notifications
+IPython magic for Telegram notifications,
+or get a push once a model is finally trained.
 
 Requires
 -------------
@@ -24,7 +25,7 @@ Cell magic as follows:
     %%telegram_send I am finally done!
     model.train(epochs=1e10)
 
-will send "I am done" to you on behalf of your bot.
+will send "I am done" to you on behalf of your bot once the cell is executed.
 
 Token
 -------------
