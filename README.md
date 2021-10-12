@@ -4,8 +4,9 @@ IPython magic for Telegram notifications,
 or get a push once a model is finally trained.
 
 Requires
--------------
-    pip install telepot
+```
+    pip install -r requirements.txt
+```
 
 Install
 -------------
